@@ -14,15 +14,7 @@ public abstract class Driver<T extends Transport & Competing> {
     private int experience;
     private T typeOfCar;
 
-    protected Driver(String FIO, Character typeOfLicense) {
-        if (FIO == null || FIO.isEmpty()) {
-            throw new NullPointerException("Укажите ФИО водителя");
-        } else {
-            this.FIO = FIO;
-        }
 
-        setTypeOfLicense(typeOfLicense);
-    }
 
 
     protected Driver(String FIO, Character typeOfLicense, int experience, T typeOfCar) {

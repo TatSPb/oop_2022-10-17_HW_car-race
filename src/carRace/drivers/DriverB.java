@@ -12,9 +12,5 @@ public class  DriverB extends Driver<Car>{
     public DriverB(String FIO, Character typeOfLicense, int experience, Car typeOfCar) {
         super(FIO, typeOfLicense, experience, typeOfCar);
     }
-
-    protected DriverB(String FIO, Character typeOfLicense) {
-        super(FIO, typeOfLicense);
-    }
 }
 
