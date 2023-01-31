@@ -6,7 +6,6 @@ import java.util.Set;
 
 public class DriverList {
 
-
     public static Set<Driver> driverList = new HashSet<>();
 
     public static void addDriverToList(Driver<?> newDriver) {
@@ -21,6 +20,10 @@ public class DriverList {
         for (Driver driver : driverList) {
             System.out.println(driver.getFIO());
         }
+    }
+
+    public static Set<Driver> getDriverList() {
+        return driverList;
     }
 }
 

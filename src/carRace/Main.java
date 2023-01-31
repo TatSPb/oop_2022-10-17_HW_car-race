@@ -70,11 +70,11 @@ public class Main {
 //        for (Transport transport : transports) {
 //            printInfo3(transport);
 //        }
-
-        driverList.addDriverToList(niv);
-        driverList.addDriverToList(kiv);
-        driverList.addDriverToList(kiv);
-        printDriverList();
+        Set<Driver> driverList = new HashSet<>();
+        DriverList.addDriverToList(niv);
+        DriverList.addDriverToList(kiv);
+        DriverList.addDriverToList(inp);
+        DriverList.printDriverList();
 
     }
 
